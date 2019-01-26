@@ -18,7 +18,7 @@ def word_substituter(string)
   new_array = []
   array = string.split(" ")
   array.each do |word|
-    if dictionary.keys.include?(word.downcase)
+    if dictionary.keys.include?(word)
       new_array << dictionary[word]
     else
       new_array << word
