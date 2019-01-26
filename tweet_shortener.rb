@@ -50,7 +50,6 @@ def shortened_tweet_truncator(tweet)
     else
       return shorter_tweet(tweet)
     end
-  end
   tweet
 end
 
