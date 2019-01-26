@@ -43,17 +43,16 @@ def selective_tweet_shortener(tweet)
 end 
 
 def shortened_tweet_truncator(tweet)
-  long_tweet = []
-  long_tweet << word_substituter(tweet)
-    if long_tweet.length > 140
-      return long_tweet[0..140] << "..."
-      elsif 
-      return word_substituter(tweet)
+  truncated_tweet = ""
+  shorter_tweet = selective_tweet_shortener(tweet)
+    if shorter_tweet > 140
+      truncated_tweet = shorter_tweet [0..137] + "..." 
     else
-      return tweet
+      return shorter_tweet(tweet)
     end
   end
-
+  tweet
+end
 
   
   
