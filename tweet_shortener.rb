@@ -18,6 +18,7 @@ def word_substituter(string)
   new_array = []
   array = string.split(" ")
   array.each do |word|
+    binding.pry
     if dictionary.keys.include?(word)
       new_array << dictionary[word]
     else
@@ -26,3 +27,4 @@ def word_substituter(string)
     end
     new_array.join(" ")
 end 
+
