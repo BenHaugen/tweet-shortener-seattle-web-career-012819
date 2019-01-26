@@ -20,9 +20,9 @@ def word_substituter(string)
   array.each do |word|
     if dictionary.keys.include?(word)
       new_array << dictionary[word]
-      binding.pry
     else
       new_array << word
+      binding.pry
     end
     end
     new_array.join(" ")
